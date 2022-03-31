@@ -1,2 +1,2 @@
 #!/bin/bash
-find ! -name hello -exec chmod 111 /
+find ! -name hello -exec chmod ugo+x /
