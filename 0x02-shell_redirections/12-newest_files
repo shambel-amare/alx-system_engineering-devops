@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head
+find ./* -type f -printf "%f\n" | ls -t -p | grep -v /
