@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '$0 ~ PAT { N=LINES } (N--) > 0' LINES=4 PAT="root" /etc/passwd
+grep -wns root /etc/passwd -A 3
